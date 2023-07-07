@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+     <!-- Bootstrap Link -->
+     <link
+     rel="stylesheet"
+     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+   />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <style>
+    .con{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+    }
+    .formManage{
+        
+        width:400px;
+        padding:40px;
+        border: 1px solid black;
+        background-image: url("Image/login.avif");
+        box-shadow: 5px 5px 29px 1px #000;
+        filter: grayscale(30%);
+    }
+  body{
+    background-image: url("Image/lback.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+   </style>
+  </head>
+  <body>
+    <div class="container con">
+        <div class="formManage">
+            <form action="">
+                <h1 class="text-center bg-info">Login</h1>
+                <label for="UserName">UserName</label>
+                <input type="text" id="name"placeholder="Enter Your Email Id"class="form-control"required autofocus/>
+                <label for="UserName">PassWord</label>
+                <input type="password"id="pass""name="pass"placeholder="Enter Your Password" class="form-control"required/></br>
+                <input type="Submit" class="btn btn-info btn-block"value="Submit">
+              </form>
+        </div>
+    </div>
+   
+  </body>
+</html>

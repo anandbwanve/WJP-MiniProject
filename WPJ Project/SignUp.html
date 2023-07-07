@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap Link -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      .con {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+      }
+      .formManage {
+        width: 670px;
+        padding: 40px;
+        border: 1px solid black;
+        box-shadow: 5px 5px 29px 1px #000;
+        background-image: url("Image/login.avif");
+        filter: grayscale(30%);
+      }
+      .form-group {
+        display: flex;
+      }
+      .btn {
+        margin-top: 30px;
+      }
+      .formM {
+        margin-top: 40px;
+      }
+      body {
+        background-image: url("Image/lback.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      label {
+        color: whitesmoke;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container con">
+      <div class="formManage">
+        <form action="">
+          <h1 class="text-center bg-info">Registration</h1>
+
+          <label for="FirstName">FirstName:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="Fname"
+            placeholder="Enter Your Email Id"
+            required
+            autofocus
+          />
+
+          <label for="LastName"> LastName:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="Lname"
+            name="pass"
+            placeholder="Enter Your Password"
+          />
+
+          <label for="date">Joining Date :</label>
+          <input type="date" id="date" class="form-control" required />
+
+          <label for="email">Email Id :</label>
+          <input type="email" id="email" class="form-control" required />
+
+          <label for="loc">Location :</label>
+          <input type="text" id="loc" class="form-control" required />
+
+          <label for="dept">Department :</label>
+          <select name="text" id="dept" class="form-control" required>
+            <option value="dapt1">Project Manager</option>
+            <option value="dapt2">System Engineer</option>
+            <option value="dapt3">Data Analyst</option>
+            <option value="dapt4">Full stack developer</option>
+          </select>
+
+          <label for="date">Password</label>
+          <input type="password" id="date" class="form-control" required />
+
+          <input type="Submit" class="btn btn-info btn-block" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
